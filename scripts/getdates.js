@@ -20,7 +20,7 @@ function updateLastModifiedDate() {
     }
 }
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
     updateCurrentYear();
     updateLastModifiedDate();
-};
+});
