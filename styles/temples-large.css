@@ -38,9 +38,8 @@ figure img {
 
 figure:hover img {
     transform: scale(1.1); 
-
+}
 figure figcaption {
     margin-top: 10px;
 }
 
-}
