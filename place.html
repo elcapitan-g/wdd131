@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gerald Newell</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/mobile.webp" media="(max-width: 768px)">
+                <source srcset="images/desktop.webp" media="(min-width: 769px)">
+                <img srcset="images/desktop.webp" alt="Hero Photo" width="1000" height="500">
+            </picture>
+        </section>
+        <section class="box data">
+            <h2>Data</h2>
+            <p>Area: 1,964,375 square kilometers</p>
+            <p>Population: 126,190,788</p>
+            <p>Capital: Mexico City</p>
+            <p>Languages: Spanish</p>
+            <p>Currency: Mexican Peso (MXN)</p>
+            <p>Time Zone: UTC-5 to UTC-8</p>
+            <p>Calling Code: +52</p>
+            <p>Internet TLD: .mx</p>
+        </section>
+        <section class="box weather">
+            <h2>Weather <img src="images/weather.svg" alt="Weather Icon" id="weather-icon"></h2>
+            <p>Current Temperature: <span id="current-temp">25°C</span></p>
+            <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
+            <p>Windchill Factor: <span id="windchill-factor">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+         <p>&copy; <span id="copyright-year"></span> 🤙 Gerald Newell 🤙 Kawaihae, Hawaii</p>
+        <p id="last-modified">Last Modified: </p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
