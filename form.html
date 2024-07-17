@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gerald Newell</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Gerald Newell, Web development, Hawaii">
+    <meta name="author" content="Gerald">
+    <link rel="stylesheet" href="styles/form.css">
+    </head>
+
+<body>
+    <header>
+      <h1>Product Review </h1>
+    </header>
+  
+    <main>
+      <form action="review.html" method="get" id="reviewForm">
+        <div class="form-group">
+          <label for="productName">Product Name</label>
+          <br/>
+          <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        </div>
+  
+        <div class="form-group">
+          <label for="overallRating">Overall Rating</label><br>
+          <input type="radio" id="rating1" name="overallRating" value="1" required>
+          <label for="rating1">☆</label>
+          <input type="radio" id="rating2" name="overallRating" value="2" required>
+          <label for="rating2">☆☆</label>
+          <input type="radio" id="rating3" name="overallRating" value="3" required>
+          <label for="rating3">☆☆☆</label>
+          <input type="radio" id="rating4" name="overallRating" value="4" required>
+          <label for="rating4">☆☆☆☆</label>
+          <input type="radio" id="rating5" name="overallRating" value="5" required>
+          <label for="rating5">☆☆☆☆☆</label>
+        </div>
+  
+        <div class="form-group">
+          <label for="installationDate">Date of Installation</label>
+          <br/>
+          <input type="date" id="installationDate" name="installationDate" required>
+        </div>
+  
+        <div class="form-group">
+          <label>Which features did you find useful in the product? (Check all that apply)</label><br>
+          <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
+          <label for="feature1">Durability</label><br>
+          <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
+          <label for="feature2">Ease of Use</label><br>
+          <input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3">
+          <label for="feature3">Perfomance</label><br>
+          <input type="checkbox" id="feature4" name="usefulFeatures" value="Feature 4">
+          <label for="feature4">Design</label><br>
+        </div>
+  
+        <div class="form-group">
+          <label for="writtenReview">Written Review (Optional)</label><br>
+          <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="userName">Your Name (Optional)</label>
+          <br/>
+          <input type="text" id="userName" name="userName">
+        </div>
+  
+        <div class="form-group">
+          <input type="submit" value="Post Review">
+        </div>
+      </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> 🤙 Gerald Newell 🤙 Kawaihae, Hawaii</p>
+        <p> Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
