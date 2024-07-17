@@ -6,17 +6,17 @@
     <title>Review Submitted</title>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Check if localStorage supports and initialize review count if not present
+           
             if (!localStorage.getItem('reviewCount')) {
                 localStorage.setItem('reviewCount', '0');
             }
 
-            // Increment review count and update localStorage
+        
             let currentCount = parseInt(localStorage.getItem('reviewCount'));
             currentCount++;
             localStorage.setItem('reviewCount', currentCount.toString());
 
-            // Display the review count on the page
+            
             document.getElementById('reviewCount').textContent = currentCount;
         });
     </script>
