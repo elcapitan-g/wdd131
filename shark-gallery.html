@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gerald Newell</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Gerald Newell, Web development, Hawaii">
+    <meta name="author" content="Gerald">
+    <link rel="stylesheet" href="styles/shark.css">
+    <link rel="stylesheet" href="styles/shark-large.css" media="(min-width: 768px)">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Hawaii Shark Logo" id="logo">
+        <h1>Hawaii Sharks</h1>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="shark-about.html">About</a>
+            <a href="shark-gallery.html">Gallery</a>
+        </nav>
+        <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+
+ 
+    <main>
+        <h2>Shark Gallery</h2>
+        <br>
+        <a href="shark-gallery.html" id="home-link">All Sharks</a>
+        <span>&nbsp;&nbsp;&nbsp;</span> <!-- Spacer -->
+        <a id="inshore-link" href="#">Inshore</a>
+        <span>&nbsp;&nbsp;&nbsp;</span> <!-- Spacer -->
+        <a id="offshore-link" href="#">Offshore</a>
+        <span>&nbsp;&nbsp;&nbsp;</span> <!-- Spacer -->
+        <a id="large-link" href="#">Large</a>
+        <span>&nbsp;&nbsp;&nbsp;</span> <!-- Spacer -->
+        <a id="small-link" href="#">Small</a>
+        <br>
+        <br>
+        <section id="gallery">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> 🤙 Gerald Newell 🤙 Kawaihae, Hawaii</p>
+        <p> Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/shark-gallery.js" defer></script>
+</body>
+</html>

@@ -6,72 +6,47 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Gerald Newell</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Gerald Newell, Web development, Hawaii">
     <meta name="author" content="Gerald">
-    <link rel="stylesheet" href="styles/base.css">
-    
+    <link rel="stylesheet" href="styles/shark.css">
+    <link rel="stylesheet" href="styles/shark-large.css" media="(min-width: 768px)">
 </head>
 
-<body>
-    <header>
-        <div class="header-content">
-            <h1>WDD 131 - Dynamic Web Fundamentals - Gerald Newell</h1>
-            <nav>
-                <a href="https://linkedin.com">Linkedin</a>
-                <a href="https://byui.instructure.com/">I-Learn</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-                <a href="#">Final Project</a>
+       <body>
+        <header>
+            <img src="images/logo.png" alt="Hawaii Shark Logo" id="logo">
+            <h1>Hawaii Sharks</h1>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="shark-about.html">About</a>
+                <a href="shark-gallery.html">Gallery</a>
             </nav>
-        </div>
-    </header>
-
-    <div class="grid">
+            <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </header>
+        <div class="=content">
         <main>
-            <section class="card">
-                <div class="row">
-                    <h2>About Me</h2>
-                    <div class="card-content">
-                        <p>Hello, my name is Gerald Newell and I am from Kawaihae, Hawaii. I enjoy shark photography and spearfishing. I work as a shark photographer and boat captain. When I am not working, I am raising my daughter.</p>
-                        <p>I was born and raised in Hawaii but I am also half-mexican and had the opportunity to live there a few years and even served my mission in Mexico City.</p>
-                        <img src="images/persona.jpg" alt="Hello my name is Gerald Newell" width="200">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="left-side">
-                        <h3>Kawaihae, Hawaii</h3>
-                        <hr class="underline">
-                    </div>
-                    <div class="right-side">
-                        
-                        <div class="card-content">
-                            <img src="images/hiflag.jpg" alt="Hawaii Flag" width="200">
-                            <p>Hawaii is the 50th state of the United States, formally the Kingdom of Hawaii until the overthrow by United States citizens in the late 1800s. It is formed of 8 major islands, Hawaii Island being the largest, and Oahu being the most populous. Oahu is where the capital, Honolulu, is located. Kawaihae is on Hawaii Island, sometimes called the Big Island as it is geographically larger than all the islands combined.</p>
-                            <p>Although now part of the United States, There are many who wish to break away and form its own Sovereign Kingdom once more. If you visit the islands, those who support Hawaiian Sovereignty have the flag of the state upside down.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="hero2">
+                <article>
+                    <h1> Welcome to Hawaii Sharks</h1>
+                    
+                    <img src="images/homes.jpg" alt="home">
+                    </article>
+            </div>
+            <br>
+            
 
-            <section class="card">
-                <h2>Web Dev Resources</h2>
-                <ul>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <li><a href="https://dev.to">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://dev.to">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                </ul>
-            </section>
+           
+
+            
+           
         </main>
-    </div>
+        </div>
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> 🤙 Gerald Newell 🤙 Kawaihae, Hawaii</p>
-        <p id="lastModified"></p>
-    </footer>
-
-    <script src="scripts/getdates.js" defer></script>
-</body>
-</html>
+        <footer>
+            <p>&copy; <span id="copyright-year"></span> 🤙 Gerald Newell 🤙 Kawaihae, Hawaii</p>
+            <p> Last Modified: <span id="last-modified"></span></p>
+        </footer>
+    
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/shark-gallery.js" defer></script>
+    </body>
+    </html>
+    
