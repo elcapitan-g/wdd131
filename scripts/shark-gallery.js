@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navToggle.addEventListener('click', function() {
         var expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
         navToggle.setAttribute('aria-expanded', !expanded);
-        mainNav.style.display = expanded ? 'none' : 'flex'; // Adjust to 'flex' for proper display
+        mainNav.style.display = expanded ? 'none' : 'flex'; 
     });
 
     function handleResize() {
